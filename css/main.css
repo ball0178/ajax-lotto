@@ -1,0 +1,69 @@
+/* css/main.css **/
+
+@import url('https://fonts.googleapis.com/css?family=Cabin|Old+Standard+TT');
+
+body{
+    overflow: hidden;
+    font-size: 2.414rem;
+    font-style: italic;
+    font-weight: bolder;
+    color: azure;
+    padding:0.5rem 2rem;
+    font-family: 'Old Standard TT', 'Georgia1', 'Georgia' , serif;
+    background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/glowing-golden-particles_-y8c6ehgh__F0000.png");
+    
+}
+
+.page{
+    /*display: none;*/
+    padding: 2rem;
+    position: absolute;
+    transform: translateX(-200%);
+    transition: transform 1.5s ease;
+    
+
+}
+
+#btnSend, #btnBack{
+    height: 6rem;
+    width: 12rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+    background-color: darkgoldenrod;
+    border-width: thick;
+    border-color: gold;
+}
+
+#digits, #max{
+    height: 2rem;
+    width: 5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.page.active{
+    /*display: block;*/
+    transform: translateX(0);
+}
+
+.money{
+    height: 100rem;
+    width: 100rem;
+}
+
+
+.num{
+    list-style: none;
+    color: #FFFF00;
+    background-color: #291F05;
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    text-align: center;
+    font-family: 'Cabin', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    font-size: 4rem;
+    font-weight: bolder;
+    margin: 2rem;
+    border-radius: 40%;
+    float: left;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX Lotto</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="one.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+   <img src="https://tamarin-mtl.s3.amazonaws.com/tamarin/applications/OLG/images/common/logo-649-6759c534fd42038e0d1bf532664af26a.png" alt="Lotto max pic" />
+    <div id="home" class="page active">
+        <header>
+            <h2>Feelin' Lucky?</h2>
+        </header>
+        <section class="main">
+            <p class="formBox">
+                <label for="digits">Enter Number of Digits</label>
+                <input id="digits" type="number" max="10" min="1" placeholder="6" class="sm" />
+            </p>
+            <p class="formBox">
+                <label for="max">Enter Number Range</label>
+                <span>1 to </span><input id="max" type="number" min="2" max="99" placeholder="49" class="sm" />
+            </p>
+            <p class="formBox buttons">
+                <button id="btnSend">Test your luck!</button>
+            </p>
+        </section>
+    </div>
+    <div id="list" class="page">
+        <header>
+            <h1>Lotto Numbers</h1>
+        </header>
+        <section class="main">
+            <ul class="num_list">
+                <!-- display the generated numbers from the server -->
+            </ul>
+            <p>
+                <button id="btnBack">Start Again</button>
+            </p>
+        </section>
+    </div>
+    <script src="js/main.js"></script>
+    <img class="money" src="http://pngimg.com/uploads/gold/gold_PNG11037.png" alt="Pretty Gold Coins" />
+    <footer>
+            <p>&copy; 2017 BallaghLotto Inc.</p>
+    </footer>
+</body>
+</html>
